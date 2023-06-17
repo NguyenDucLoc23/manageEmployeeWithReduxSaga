@@ -1,0 +1,8 @@
+import axios from "axios";
+import ConstantList from "../../appConfig";
+const API_PATH = ConstantList.API_ENPOINT;
+
+export const getAllListEmployee = () => {
+  const url = API_PATH + '/api/employees/all';
+  return axios.get(url)
+}
